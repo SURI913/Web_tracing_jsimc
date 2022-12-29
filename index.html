@@ -1,0 +1,156 @@
+<!-- 인덱스.html을 해야지 홈페이지가 인식이 된다? -->
+<!-- 헤더, 푸터는 공통, 섹션-아티클/슬라이더 -->
+<!-- html로 골격부터 만든 후 css로 살을 붙여나가야한다 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정선군관리공단</title>
+
+    <link rel="stylesheet" href="/CSS/common.css">
+    <link rel="stylesheet" href="/CSS/main.css">
+
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">   
+        $(document).ready( function() {
+        
+        $("header").load("/header.html");  // 원하는 파일 경로를 삽입하면 된다
+        $("footer").load("/footer.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+        
+        });
+    </script>
+
+    <script>
+        function openTab(tabName) { //공지사항 탭
+            var i;
+            var x = document.getElementsByClassName("tabcontents");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+    </script>
+    
+</head>
+<body>
+    <header> 
+        
+    </header>
+
+    <div id="main_sections">
+        <section id="image_slider">
+            <h1>행복정선을 만들어가는 일류 공기업</h1> <!--이미지 슬라이더 타이틀-->
+            <div>
+                <img src="IMG/m77.jpg" alt="">
+                <img src="IMG/m100.jpg" alt="">
+                <img src="IMG/m103.jpg" alt="">
+                <img src="IMG/m104.jpg" alt="">
+            </div>
+        </section>
+
+        <div class="wrap">
+            <section id="reservation">
+                <h2>정선군 시설관리공단 예약시스템</h2>
+                <ul> <!--nav생략, 넣어도 되고 생략해도 되고-->
+                    <li><a href=""><img src="IMG/icon/icon_011.png" alt=""> 회동 솔향 캠핑장</a></li>
+                    <li><a href=""><img src="IMG/icon/icon_022.png" alt=""> 화암약수 야영장</a></li>
+                    <li><a href=""><img src="IMG/icon/icon_033.png" alt=""> 동강전망 휴양림</a></li>
+                    <li><a href=""><img src="IMG/icon/icon_044.png" alt=""> 도사곡 휴양림</a></li>
+                    <li><a href=""><img src="IMG/icon/icon_055.png" alt=""> 생태 체험학습장</a></li>
+                    <li><a href=""><img src="IMG/icon/icon_066.png" alt=""> 장사정보 시스템</a></li>
+                    <li class="nono"><a href=""><img src="IMG/icon/icon_077.png" alt=""> 체육시설 예약</a></li>
+                </ul>
+            </section> <!--예약-->
+            <div class="flex">
+                <section id="notice_board">
+                    <nav>
+                        <ul id="notice_menu">
+                            <li><a href="javascript:void(0);" onclick="openTab('tab1')" return flase;>공지사항</a></li>
+                            <li><a href="javascript:void(0);" onclick="openTab('tab2')" return flase;>채용공고</a></li>
+                            <li><a href="javascript:void(0);" onclick="openTab('tab3')" return flase;>타기관소식</a></li>
+                            <li><a href="javascript:void(0);" onclick="openTab('tab4')" return flase;>자유게시판</a></li>
+                            <li class="no"><a>+</a></li>
+                        </ul>
+                        <!-- 공지사항 -->
+                        <div class="tabcontents" id="tab1">
+                            <table>
+                                <tr><td><a href="">아라리촌 공유재산(저잣거리 음식점)대부입찰...</a></td> <td id="notice_date">2022/10/20</td></tr>
+                                <tr><td><a href="">국민체육센터(수영장) 운영중지 안내</a></td> <td id="notice_date">2022/10/11</td></tr>
+                                <tr><td><a href="">22년 정선군목재문화체험장 교육 프로그램...</a></td> <td id="notice_date">2022/08/05</td></tr>
+                                <tr><td><a href="">22년 정선군목재문화체험장 교육 프로그램...</a></td> <td id="notice_date">2022/05/25</td></tr>
+                                <tr><td><a href="">22년 정선군목재문화체험장 교육 프로그램...</a></td> <td id="notice_date">2022/05/09</td></tr>
+                                <tr><td><a href="">설 연휴 기간 하늘공원, 하늘터 이용 안내</a></td> <td id="notice_date">2022/01/20</td></tr>
+                            </table>
+                        </div>
+                        <div class="tabcontents" id="tab2">
+                            <table>
+                                <tr><td><a href="">정선군시설관리공단 가리왕산 케이블카 임기제...</a></td> <td id="notice_date">2022/11/22</td></tr>
+                                <tr><td><a href="">"가리왕산 케이블카 임기제 공무직 공개채용"...</a></td> <td id="notice_date">2022/11/22</td></tr>
+                                <tr><td><a href="">정선군시설관리공단 기간제근로자(고령자우선...</a></td> <td id="notice_date">2022/11/14</td></tr>
+                                <tr><td><a href="">2022년 4회 정선군 시설관리공단 공무직 공개...</a></td> <td id="notice_date">2022/11/14</td></tr>
+                                <tr><td><a href="">정선군시설관리공단 가리왕산 케이블카 임기제...</a></td> <td id="notice_date">2022/11/14</td></tr>
+                                <tr><td><a href="">2022 정선군 시설관리공단 신규직원 공개경쟁...</a></td> <td id="notice_date">2022/11/14</td></tr>
+                            </table>
+                        </div>
+                        <div class="tabcontents" id="tab3">
+                            <table>
+                                <tr><td><a href="">강원도경제진흥원 제6차 공개채용 공고</a></td> <td id="notice_date">2021/11/19</td></tr>
+                                <tr><td><a href="">E-비지니스지원센터 육아휴직 대체인력 채용공고</a></td> <td id="notice_date">2021/11/12</td></tr>
+                                <tr><td><a href="">E-비지니스지원센터 육아휴직 대체인력 채용공고</a></td> <td id="notice_date">2021/11/02</td></tr>
+                                <tr><td><a href="">강원도경제진흥원 2021년 제5차 공개채용 공...</a></td> <td id="notice_date">2021/09/07</td></tr>
+                                <tr><td><a href="">강원도경제진흥원 육아휴직 대체인력 채용공고</a></td> <td id="notice_date">2021/09/03</td></tr>
+                                <tr><td><a href="">2021년도 시군구 지역연고사업유겅(비R&D)...</a></td> <td id="notice_date">2021/02/15</td></tr>
+                            </table>
+                        </div>
+                        <div class="tabcontents" id="tab4">
+                            <table>
+                                <tr><td><a href="">4개월 과정 청소년지도사 2 3급 시험 면제...</a></td> <td id="notice_date">2022/11/17</td></tr>
+                                <tr><td><a href="">이번이 마지막 노인심리상담 방과후 관련...</a></td> <td id="notice_date">2022/11/17</td></tr>
+                                <tr><td><a href="">사회복지사 아직도 안따셨나요 법개정전...</a></td> <td id="notice_date">2022/11/17</td></tr>
+                                <tr><td><a href="">정선걷기학교주말반운영</a></td> <td id="notice_date">2022/10/17</td></tr>
+                                <tr><td><a href="">【4개월 과정】청소년지도사 시험 면제받고...</a></td> <td id="notice_date">2022/08/03</td></tr>
+                                <tr><td><a href="">★한국어 교원 2급 자격증 수업 지금 빨리...</a></td> <td id="notice_date">2022/02/24</td></tr>
+                            </table>
+                        </div>
+                    </nav>
+                    <div id="banner">
+                        <img src="IMG/banner/sidebar_01.png" alt="">
+                        <img src="IMG/banner/sidebar_02.png" alt="">
+                        <img src="IMG/banner/sidebar_03.png" alt="">
+                    </div>
+                </section> <!--게시판-->
+                <section id="notice_slider">
+                    <h3 class="under_bar">시설공단알림창</h3>
+                    <div>
+                        <img src="IMG/notice_slider/200816_02.png" alt="">
+                        <img src="IMG/notice_slider/210430.png" alt="">
+                        <img src="IMG/notice_slider/220614.jpg" alt="">
+                        <img src="IMG/notice_slider/220706.jpg" alt="">
+                        <img src="IMG/notice_slider/220715_02.jpg" alt="">
+                        <img src="IMG/notice_slider/220720_02.jpg" alt="">
+                        <img src="IMG/notice_slider/220816_02.jpg" alt="">
+                        <img src="IMG/notice_slider/220901.jpg" alt="">
+                        <img src="IMG/notice_slider/220916_01.jpg" alt="">
+                        <img src="IMG/notice_slider/220917.jpg" alt="">
+                        <img src="IMG/notice_slider/221013.jpg" alt="">
+                    </div>
+                </section>
+    
+                <section id="etc">
+                    <img src="IMG/ect/company_001.jpg" alt="">
+                    <img src="IMG/ect/company_002.jpg" alt="">
+                    <img src="IMG/ect/company_003.jpg" alt="">
+                </section> <!--기타-->
+            </div>
+        </div>
+    
+    </div>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>
