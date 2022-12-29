@@ -1,0 +1,117 @@
+#pagetop{width: 100%; height: 4px; background: #457bb1; margin-top: 132px;}
+        
+        /* 왼쪽메뉴 박스 */
+        #left_menu{
+            width: 220px;
+            /* border: 1px solid red; */
+            float: left;
+            margin-top: -3px;
+        }
+        #contents{
+            /* width: 980px; */
+            width: 80%;
+            float: right;
+            margin-top: -3px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            
+            font-family: 'Noto Sans KR',sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* 왼쪽메뉴 타이틀 */
+        #left_menu h1{
+            background-image: url(/IMG/menutop_bg.jpg);
+            background-size: cover;
+            width: 220px;
+            height: 90px;
+            padding: 50px 0 0 0;
+
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 700;
+            font-size: 27px;
+            text-align: center;
+            color: white;
+        }
+        /* 왼쪽메뉴 설정 */
+        #left_menu > ul{
+            /* 양 옆 선 */
+            border-right: 1px solid #ececee;
+            border-left: 1px solid #ececee;
+        }
+
+        #left_menu > ul > li{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            letter-spacing: -1px;
+            
+            line-height: 50px;
+            /* 하단 선 */
+            border-bottom: 1px solid #ececec;
+        }
+
+        #left_menu > ul > li > a{
+            display: block;
+            padding: 0 0 0 35px;
+        }
+
+        /* 메뉴 선택 시 설정 */
+        #left_menu a:hover{
+            background-color: #194672;
+            color: white;
+            font-weight: 700;
+            border: 1px solid #194672;
+            
+        }
+        #tab a:hover{
+            background-color: #194672;
+            color: white;
+            font-weight: 700;
+            border: 1px solid #194672;
+            
+        }
+        #main_sections a.select{
+            background-color: #194672;
+            color: white;
+            font-weight: 700;
+            border: 1px solid #194672;
+        }
+
+        /* 메인 내용 */
+        #title{
+            font-family: 'NanumSquareEB';
+            font-size: 30px;
+            text-align: left;
+            letter-spacing: -1.5px;
+
+            height: 45px;
+
+            /* 아이콘 */
+            background-image: url(/IMG/title_circle.jpg);
+            background-repeat: no-repeat;
+            background-position: 0 5px;
+            padding: 0 0 0 30px;
+
+
+            border-bottom: 1px solid #e5e5e5;
+            
+        }
+
+        
+
+        article #subtitle{
+            text-align: left;
+            font-family: 'NanumSquare';
+            /* font-size: 26px; */
+            height: 50px;
+
+            /* 아이콘 */
+            padding: 0 0 0 30px;
+            background-image: url(/IMG/title_dot.jpg);
+            background-repeat: no-repeat;
+            background-position: 0 5px;
+            margin: 40px 0 0 0;
+        }
+
+        #contents img{margin-top: 40px; border: #eee solid 1px;}

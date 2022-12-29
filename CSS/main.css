@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* 본고딕 폰트 */
+
+.under_bar{
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0 0 0 30px;
+}
+
+/* 사진위에 글자 띄우기 */
+#image_slider h1{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-size: 60px;
+    color: white;
+    z-index: 1;
+}
+
+#reservation{
+    width: 100%;
+    position: absolute;
+    top: -105px;
+    z-index: 2;
+}
+#reservation h2{
+    text-align: center;
+    color: white;
+    background-color: rgba(50, 50, 50, 0.7);
+    padding: 4px 0;
+    letter-spacing: -2px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+#reservation ul{
+    background-color: rgba(50, 50, 50, 0.5);
+}
+#reservation ul li{
+    display: inline-block;
+    padding: 2px 14px;
+}
+#reservation ul li:not([class = "nono"]){
+    border-right: 1px solid rgba(50, 50, 50, 0.7);
+}
+#reservation ul li img{
+    color: white;
+    vertical-align: middle;
+    letter-spacing: -2px;
+}
+#reservation ul li a{
+    color: white;
+    vertical-align: middle;
+    letter-spacing: -2px;
+}
+
+/* 사진크기 정함 */
+#image_slider{  
+    width: 100%;
+    overflow: hidden;
+}
+/* 포지션은 계속 바뀌기 때문에 relative */
+#main_sections #image_slider{
+    overflow: hidden;
+    position: relative;
+}
+/* 사진이 4장이면 400% 만약에 300%로 하면 사진 두개가 같이 나옴 사진갯수대로 퍼센트 맞춰줌*/
+#main_sections #image_slider div{
+    position: relative;
+    width: 400%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    /* 16초단위로 시간 조정 슬라이더 infinite가 있어야지 움직임이 생긴다 없으면 움직임x */
+    animation: 16s slider infinite;
+}
+/* width 25가 없으면  */
+#image_slider div img{
+    width: 25%;
+}
+/* 이걸로 움직임 
+left가 위치
+가로로 다 일렬로 세워
+옆으로 움직임
+0%{}같은애들이 시간?
+ */
+@keyframes slider {
+    0% {left: 0%;}
+    25% {left: 0%;}
+    30% {left: -100%;}
+    50% {left: -100%;}
+    55% {left: -200%;}
+    75% {left: -200%;}
+    80% {left: -300%;}
+    100% {left: -300%;}
+}
+
+/* 메인 섹션 */
+
+/* 단 나눔 */
+.flex{padding: 30px 0; display: flex;}
+
+#notice_board{
+    width: 45%;
+    border: 1px solid red;
+}
+
+#notice_slider{
+    width: 35%;
+    border: 1px solid green;
+
+    margin-left: 19px;
+}
+
+#etc{
+    width: 20%;
+    border: 1px solid blue;
+    margin-left: 19px;
+}
+
+/* 배치 */
+#notice_board ul { border:  1px solid #e5e5e5;}
+/* 공지사항 - 채용공고 -타기관 소식 부분 */
+#notice_board ul li:not([class = "no"]){
+    display: inline-block; width: 20%;
+    font-size: 20px; text-align: center;
+    padding: 10px 5px;
+}
+#notice_board ul li:hover:not([class = "no"]){
+    background-color: navy;
+}
+/* 공지사항 앵커 올라 갔을 때 색 변화 */
+#notice_board ul li:hover:not([class = "no"]) a{
+     padding: 10px 5px;
+     color: white;
+}
+
+.no{font-size: 20px; text-align: center;
+ display: inline-block; margin-left: 10px;}
+
+/* 다른 보드 내용 안보이게 하기 */
+#notice_board .tabcontents{ display: none;}
+
+/* 공지보드 내용 부분 */
+#notice_board table {
+    margin: 5px 10px; border: 1px solid #aaa;
+    border-collapse: separate;
+    /* 테이블 안에는 마진이 안먹히기 때문에 아래 방법 필수 */
+    border-spacing: 25px 15px;
+}
+#notice_board table tr td{font-size: 17px;}
+#notice_board table td:first-child{width: 80%;}
+#notice_board table td:last-child{width: 19%;}
+
+/* 보드 공개 */
+#notice_board #tab1{display: inherit;}
+
+/* 배너 */
+#notice_board #banner img {width: 31.5%; padding: 0 7px 0 0;}
+
+/* 시설공단 알림창 */
+#notice_slider h3{
+    font-weight: 400;
+    padding: 7px 20px;
+    font-size: 24px;
+    color: #555;
+}
+
+#notice_slider div img{
+    width: 392px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* width: 8.5%; */
+}
+
+/* 포지션은 계속 바뀌기 때문에 relative */
+#notice_slider{
+    overflow: hidden;
+}
+/* 사진이 4장이면 400% 만약에 300%로 하면 사진 두개가 같이 나옴 사진갯수대로 퍼센트 맞춰줌*/
+#notice_slider div{
+    position: relative;
+    width: 1100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    /* 16초단위로 시간 조정 슬라이더 infinite가 있어야지 움직임이 생긴다 없으면 움직임x */
+    animation: 25s slider2 infinite;
+
+}
+
+@keyframes slider2 {
+    0% {left: 0%;}
+    4% {left: 0%;}
+    8% {left: -100%;}
+    12% {left: -100%;}
+    16% {left: -200%;}
+    20% {left: -200%;}
+    25% {left: -300%;}
+    30% {left: -300%;}
+    35% {left: -400%;}
+    40% {left: -400%;}
+    45% {left: -500%;}
+    50% {left: -500%;}
+    55% {left: -600%;}
+    60% {left: -600%;}
+    65% {left: -700%;}
+    70% {left: -700%;}
+    75% {left: -800%;}
+    80% {left: -800%;}
+    85% {left: -900%;}
+    90% {left: -900%;}
+    95% {left: -1000%;}
+    100% {left: -1000%;}
+}
+
+#etc img:first-child{width:100%; margin-bottom: 15px;}
+#etc img:nth-child(2){width:50%;}
+#etc img:nth-child(3){width:50%; float: right; height: 129px;}

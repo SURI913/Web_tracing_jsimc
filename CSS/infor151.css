@@ -1,0 +1,354 @@
+#pagetop{width: 100%; height: 4px; background: #457bb1; margin-top: 132px;}
+        
+        /* 왼쪽메뉴 박스 */
+        #left_menu{
+            width: 220px;
+            /* border: 1px solid red; */
+            float: left;
+            margin-top: -3px;
+        }
+        #contents{
+            /* width: 980px; */
+            width: 80%;
+            float: right;
+            margin-top: -3px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            
+            font-family: 'Noto Sans KR',sans-serif;
+            overflow-x: hidden;
+            /* border: 1px solid blue; */
+        }
+
+        /* 왼쪽메뉴 타이틀 */
+        #left_menu h1{
+            background-image: url(/IMG/menutop_bg.jpg);
+            background-size: cover;
+            width: 220px;
+            height: 100px;
+            padding: 30px 0 0 0;
+
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 700;
+            font-size: 27px;
+            text-align: center;
+            color: white;
+        }
+        /* 왼쪽메뉴 설정 */
+        #left_menu > ul{
+            /* 양 옆 선 */
+            border-right: 1px solid #ececee;
+            border-left: 1px solid #ececee;
+        }
+
+        #left_menu > ul > li{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            letter-spacing: -1px;
+            
+            line-height: 50px;
+            /* 하단 선 */
+            border-bottom: 1px solid #ececec;
+        }
+
+        #left_menu > ul > li > a{
+            display: block;
+            padding: 0 0 0 35px;
+        }
+
+        /* 메뉴 선택 시 설정 */
+        #main_sections a:hover{
+            background-color: #194672;
+            color: white;
+            font-weight: 700;
+            border: 1px solid #194672;
+            
+        }
+        #main_sections a.select{
+            background-color: #194672;
+            color: white;
+            font-weight: 700;
+            border: 1px solid #194672;
+        }
+
+        /* 메인 내용 */
+        #title{
+            font-family: 'NanumSquareEB';
+            font-size: 30px;
+            text-align: left;
+            letter-spacing: -1.5px;
+
+            height: 45px;
+
+            /* 아이콘 */
+            background-image: url(/IMG/title_circle.jpg);
+            background-repeat: no-repeat;
+            background-position: 0 5px;
+            padding: 0 0 0 30px;
+
+
+            border-bottom: 1px solid #e5e5e5;
+            margin: 0 0 30px 0;
+        }
+
+        #tab{
+            position: relative;
+            margin-bottom: 30px;
+            height: 50px;
+        }
+
+        #tab ul li a{
+            width: 32%;
+            display: block;
+            font-size: 18px;
+            font-family: 'NanumSquareB';
+            letter-spacing: -1px;
+            margin: 0 8px 0 0;
+
+            background: #f6f9ff;
+            border: 1px solid #3069a2;
+            text-align: center;
+            line-height: 50px;
+            
+            float: left;
+        }
+
+        article #subtitle{
+            text-align: left;
+            font-family: 'NanumSquare';
+            /* font-size: 26px; */
+            height: 50px;
+
+            /* 아이콘 */
+            padding: 0 0 0 30px;
+            background-image: url(/IMG/title_dot.jpg);
+            background-repeat: no-repeat;
+            background-position: 0 5px;
+            margin: 60px 0 0 0;
+        }
+
+        /* 변화 o */
+        #intro{
+            width: 100%;
+            height: 430px;
+        }
+
+        /* 변화 o */
+        #intro img{
+            float: left;
+            width: 50%;
+            height: 430px;
+            margin-right: 32px;
+        }
+
+        #intro h2{
+            height: 70px;
+            float: left;
+            width: 425px;
+
+            font-size: 34px;
+            font-family: 'NanumSquareEB';
+            letter-spacing: -1.5px;
+
+            background-image: url(/IMG/underline.jpg);
+            background-repeat: no-repeat;
+            background-position: 0 70px;
+            padding: 10px 0 0 0;
+            
+        }
+
+        /* 변화 o */
+        p{
+            float: left;
+
+            width: 425px;
+            font-size: 18px;
+            line-height: 30px;
+
+            margin: 0 0 15px 0;
+            
+            letter-spacing: -1px;
+        }
+
+        /* 변화 o */
+
+        #intro table{
+            float: left;
+            width: 425px; height: 188px;
+            text-align: left;
+            border-collapse: collapse;
+        }
+
+        #intro table tr{
+            border-bottom: 1px dashed #e5e5e5;
+
+            font-size: 20px;
+            font-family: 'NanumSquareEB';
+            letter-spacing: -1px;
+            vertical-align: middle;
+        }
+
+        #intro tr th{
+            padding: 0 0 0 40px;
+        }
+
+
+        /* 추가 */
+        #intro table tr:nth-child(1){
+            background-image: url(/IMG/infomation/time2.jpg);
+            background-repeat: no-repeat;
+            background-position: 0 10px;
+            
+        }
+        #intro table tr:nth-child(2){
+            background-image: url(/IMG/infomation/map2.jpg);
+            background-repeat: no-repeat;
+            background-position: 0 10px;
+        }
+        #intro table tr:nth-child(3){
+            background-image: url(/IMG/infomation/call2.jpg);
+            background-repeat: no-repeat;
+            background-position: 0 10px;
+        }
+        #intro table tr:nth-child(4){
+            background-image: url(/IMG/infomation/money2.jpg);
+            background-repeat: no-repeat;
+            background-position: 0 10px;
+        }
+
+        .under_bar{
+            border-top: 1px solid #eee;
+
+            margin: 40px 0 0 0;
+            display: block;
+        }
+        
+
+        h3{
+            font-size: 22px;
+            font-family: 'NanumSquareB';
+            letter-spacing: -0.5px;
+
+            /* 아이콘 */
+            background-image: url(/IMG/dot.jpg);
+            background-repeat: no-repeat;
+            background-position: 0 5px;
+            padding: 0 0 0 10px;
+
+            /* 여백 */
+            margin: 20px 0 15px 0;
+        }
+
+        /* 지도 부분 */
+        #map01{
+            font-family: 'NanumSquareR';
+            font-size: 22px;
+            letter-spacing: -1px;
+            margin-top: 40px;
+            margin-bottom: 100px;
+            padding: 0 0 200px 0;
+        }
+
+        #map01 table{
+            margin-left:auto;margin-right:auto; 
+        }
+
+        #map01 tr :nth-child(2){padding: 0 30px 0 0;}
+
+        #map01 tr :first-child {
+            background-image: url(/IMG/infomation/map.jpg);
+            padding: 0 10px 0 27px;
+            background-repeat: no-repeat;
+            background-position: 0 5px;
+        }
+
+
+        #map01 tr :nth-child(3) {
+            background-image: url(/IMG/infomation/call.jpg);
+            padding: 0 10px 0 27px;
+            background-repeat: no-repeat;
+            background-position: 0 5px;
+        }
+
+
+        .table{
+            width: 980px;
+            border-top: 3px solid #194672;
+
+            /* 글자 */
+            font-size: 17px;
+            font-family: 'NanumSquareR';
+            margin-bottom: 35px;
+            letter-spacing: -1px;
+
+            text-align: center;
+            vertical-align: middle;
+
+            /* 선 두줄 방지 (th, td에 테두리를 넣어 줄이 두개씩 생김) */
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        /* 표 그리기 */
+        .table th{
+            background: #f6f8fa;
+            border: 1px solid #dddddd;
+            height: 50px;
+        }
+        .table td{border: 1px solid #dddddd; height: 50px;}
+
+        .table th:first-child {border-left: 0px solid #fff;}
+        .table th:last-child {border-left: 0px solid #fff;}
+        .table td:first-child {border-left: 0px solid #fff;}
+        .table td:last-child {border-left: 0px solid #fff;}
+
+        /* 사진크기 정함 */
+        #image_slider{  
+            width: 980px;
+            overflow: hidden;
+        }
+        /* 포지션은 계속 바뀌기 때문에 relative */
+        #contents #image_slider{
+            overflow: hidden;
+            position: relative;
+        }
+        /* 사진이 4장이면 400% 만약에 300%로 하면 사진 두개가 같이 나옴 사진갯수대로 퍼센트 맞춰줌*/
+        #contents #image_slider div{
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            text-align: left;
+            font-size: 0;
+            /* 16초단위로 시간 조정 슬라이더 infinite가 있어야지 움직임이 생긴다 없으면 움직임x */
+            animation: 16s slider infinite;
+        }
+        /* width 25가 없으면  */
+        #image_slider div img{
+            width: 20%;
+        }
+        /* 이걸로 움직임 
+        left가 위치
+        가로로 다 일렬로 세워
+        옆으로 움직임
+        0%{}같은애들이 시간?
+        */
+        @keyframes slider {
+            0% {left: 0%;}
+            15% {left: 0%;}
+            20% {left: -100%;}
+            30% {left: -100%;}
+            40% {left: -200%;}
+            50% {left: -200%;}
+            60% {left: -300%;}
+            70% {left: -300%;}
+            85% {left: -400%;}
+            100% {left: -400%;}
+        }
+
+        #subject3 {width: 985px; margin-top: 10px;}
+        #subject3 li{float: left; margin-right: 5px;}
+        #subject3 img{width: 192px;}
+
+        #subject{height: 80px;}

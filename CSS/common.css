@@ -1,0 +1,213 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* 본고딕 폰트 */
+
+/* "*"을 쓰면 모든 태그에다가 적용한다는 뜻이 된다. */
+*{
+    font-family: 'Noto Sans KR',sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+ul{list-style:  none;}
+a{text-decoration: none;}
+
+/* header */
+header{
+    width:100%;
+}
+
+.wrap{
+    clear: both;
+    width:1250px;
+    margin:auto;
+    position: relative;
+}
+
+.clear{clear:both}
+
+#top_menu{
+    width:100%;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+
+}
+
+#top_menu ul{font-size: 14px; font-weight: bold; float: right; font-family: 'Noto Sans KR Bold';}
+
+#top_menu ul li{
+    display: inline-block;
+    border: 1px solid #aaa;
+    padding: 10px;
+    margin-left: -5px;
+}
+/* 0값은 px없어도 가능 */
+/* 글자에만 손을 띄우고싶다 그러면 마진이 있어야함 따라서 패닝 값 줄 것  */
+
+#top_menu ul li:nth-child(4){background-color: #aaa;}
+#top_menu ul li:nth-child(5){background-color: #888;}
+#top_menu ul li:nth-child(4) a{color: white;}
+#top_menu ul li:nth-child(5) a{color: white;}
+
+#logo{margin: 40px 20px 20px 0; float: left;}
+
+
+/* 메인메뉴 스타일 정의 */
+/* 메인메뉴 밑에 있는 ul밑에 있는 li만 inline-block으로 만든다 */
+#main_menu{margin: 60px 0px 10px; float: right;}
+#main_menu > ul > li{
+    display: inline-block;
+    padding: 20px 14px 20px;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#main_menu > ul > li  ul{
+    display: none;
+    position: absolute;
+}
+
+/* a밑에 있는 서브메뉴를 hover일때 block으로*/
+
+/* 서브메뉴 위치*/
+.sub_menu{left:0; top: 72px; z-index: 2;}
+.sub_menu ul{left: 200px; top: 0; z-index: 2;}
+
+/* 서브서브메뉴 위치 */
+.sub_sub_menu{z-index:3;}
+
+/* 서브서브서브메뉴 위치 */
+.sub_sub_sub_menu{z-index:4;}
+
+/* 서브 메뉴 li 형태 */
+.sub_menu li{
+    width: 200px; padding: 10px 5px; position: relative; background-color: white;
+    text-align: center; border-bottom: 1px solid #aaa; font-family: 'Noto Sans KR';
+    font-size: 17px;
+}
+
+/* 메뉴 보이고 접히는 부분 */
+#main_menu > ul > li:hover > .sub_menu{
+    display: inherit;
+}
+#main_menu > ul > li:hover .sub_sub_menu{
+    display: none;
+}
+#main_menu .sub_menu > li:hover > .sub_sub_menu{
+    display:inherit;
+}
+#main_menu .sub_menu > li:hover .sub_sub_sub_menu{
+    display:none;
+} 
+
+/* 메뉴부분 색지정 */
+#main_menu .sub_menu > li:hover{
+    background-color: #eee;
+}    
+#main_menu .sub_menu > li:hover > .sub_sub_menu li{
+   background-color: #eee;
+}
+
+#main_menu .sub_menu > li > .sub_sub_menu > li:hover{
+    background-color: #ddd;
+}
+#main_menu .sub_menu > li > .sub_sub_menu > li:hover .sub_sub_sub_menu{
+    display:inherit;
+}
+#main_menu .sub_menu > li > .sub_sub_menu > li:hover .sub_sub_sub_menu li{
+    background-color: #ddd;
+}  
+#main_menu .sub_menu > li > .sub_sub_menu > li > .sub_sub_sub_menu li:hover{
+    background-color: rgb(193, 193, 193);
+}  
+
+/* 메인 섹션 */
+#main_section{clear: both; width: 100%;}
+#main_section #image_slider{overflow: hidden; position: relative;}
+#main_section #image_slider div{position: relative; width: 400%; margin: 0; left: 0; text-align: left;
+     font-size: 0; text-align: left; font-size: 0; animation: 16s slider infinite;}
+
+/* footer */
+#footer{clear: both;
+    width: 100%;
+    height: 266px;
+}
+#bottom_menu{
+    background-color: #223;
+    width: 100%;
+    height: 63px;
+    margin:0;
+    padding: 0;
+    display: inline-flex;
+}
+/* 하단 메뉴바 */
+#bottom_menu ul{float: left; margin: 10px;}
+#bottom_menu ul li{
+    display: inline-block;
+    padding:5px 10px;
+}
+#bottom_menu ul li a{
+    color:white;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    letter-spacing: -2px;
+    font: bold;
+}
+#bottom_menu ul li a:hover{color: #aaa; }
+
+/* 선택창 중앙배열 아님 체크해보기 */
+#bottom_menu select{
+   margin:15px 5px;
+   padding:5px 8px;
+   float:right;
+}
+
+/* 정보란 전체 */
+#bottom_section{
+    clear: both;
+    background-color: #334;   
+    height:200px; 
+    margin-top: -5px;
+    padding:0;
+}
+
+/* 왼쪽 정보란 정렬 */
+#bottom_section #info_L{margin-top: 30px;float:left;}
+/* 왼쪽 정보란 글자 */
+#bottom_section #info_L ul li{
+    color:white;float:left; margin:2px 10px;
+    font-size: 14px;
+    font-family: 'Noto Sans KR Light', sans-serif;
+}
+#bottom_section #info_L p{
+    clear: both;
+    color:white;
+    margin: 0px 8px;
+    font-size: 14px;
+    font-family: 'Noto Sans KR Light', sans-serif;
+}
+
+/* 오른쪽 정보란 정렬 */
+#bottom_section #info_R{margin-top: 60px;float:right;} 
+#bottom_section #info_R img{ float:left;}
+#bottom_section #info_R ul{ float:right; margin-left: 30px;}
+
+#bottom_section #info_R ul li{
+    color:white; text-align: right;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+
+#bottom_section #info_R ul li img{margin-top: 5px;}
+
+#bottom_section #info_R ul li:first-child{
+    font-size:26px; font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+}
+
+#bottom_section #info_L ul li img{margin-left: 10px;}
+#bottom_menu img {margin-left: 20px; margin-bottom: 2px;}
+
+
