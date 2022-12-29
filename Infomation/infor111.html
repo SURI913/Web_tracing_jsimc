@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정선군시설관리공단</title>
+    <link rel="stylesheet" href="/CSS/common.css">
+    <link rel="stylesheet" href="/CSS/infor.css">
+
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+    <!-- 나눔스퀘어 폰트 -->
+
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">   
+        $(document).ready( function() {
+        
+        $("header").load("/header.html");  // 원하는 파일 경로를 삽입하면 된다
+        $("footer").load("/footer.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+        
+        });
+    </script>
+
+    
+</head>
+<body>
+    <header> 
+        
+    </header>
+
+    <div id="main_sections">
+        <div id="pagetop"></div>
+        <div class="wrap">
+            <!-- 화암약수 왼쪽 메뉴 -->
+            <nav id="left_menu">
+                <h1>관광지<br>이용정보</h1>
+                <ul>
+                    <li><a href="infor111.html" class="select">화암약수</a></li>
+                    <li><a href="infor121.html">화암동굴</a></li>
+                    <li><a href="infor131.html">향토박물관</a></li>
+                    <li><a href="infor141.html">천포금광촌</a></li>
+                    <li><a href="infor151.html">화암동굴 야영장</a></li>
+                    <li><a href="infor161.html">화암카트체험장</a></li>
+                    <li><a href="infor171.html">도사곡휴양림</a></li>
+                    <li><a href="infor181.html">동강전망자연휴양림</a></li>
+                    <li><a href="infor191.html">회동솔향캠핑장</a></li>
+                    <li><a href="infor1101.html">정선생태체험학습장</a></li>
+                    <li><a href="infor1111.html">아라리촌</a></li>
+                    <li><a href="infor1121.html">타임캡슐공원</a></li>
+                    <li><a href="infor1131.html">벅스랜드</a></li>
+                </ul>
+            </nav>
+            <!-- 화암약수 위에 메뉴 -->
+            <section id="contents"> 
+                <h1 id="title">화암약수</h1>
+                <nav id="tab">
+                    <ul>
+                        <li><a href="" class="select">화암약수</a></li>
+                        <li><a href="">화암약수 야영장</a></li>
+                        <li><a href="">예약하기 +</a></li>
+                        <li><a href="">예약내역 조회 +</a></li>
+                    </ul>
+                </nav>
+                <article>
+                    <h2 id="subtitle">시설소개</h2>
+                    <div id="intro">
+                        <img src="/IMG/infomation/img01.jpg" alt="">
+                        <h2>톡쏘는 신비의 맛 화암약수</h2>
+                        <p>
+                            1977년 국민관광지로 지정된 화암관광지내에 위치한 <br>
+                            화암약수는 위장병, 피부병, 빈혈, 안질, 위암 등에 <br>
+                            특출한 효능을 보인다고 전하고 있으며
+                        </p>
+                        <p>
+                            주변에는 주차장, 야영장, 수목원 등 체험 관광시설과 <br>
+                            숙박시설, 토산품 상가등이 있고, 인근지역에는 화암동굴, <br>
+                            거북바위, 용마소, 화표주, 소금강, 몰운대, 광대곡 등 <br>
+                            화암8경의 절경이 있어 휴양지로 최적의 장소입니다.
+                        </p>
+                    </div>
+
+                    <div class="under_bar"></div>
+                    <h2 id="subtitle">오시는 길</h2>
+                    <div>
+                        <!--
+                            * 카카오맵 - 약도서비스
+                            * 한 페이지 내에 약도를 2개 이상 넣을 경우에는
+                            * 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
+                        -->
+                        <!-- 1. 약도 노드 -->
+                        <div id="daumRoughmapContainer1669898237251" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                        <!-- 2. 설치 스크립트 -->
+                        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                        <!-- 3. 실행 스크립트 -->
+                        <script charset="UTF-8">
+                            new daum.roughmap.Lander({
+                                "timestamp" : "1669898237251",
+                                "key" : "2ctiw",
+                                "mapWidth" : "980",
+                                "mapHeight" : "482"
+                            }).render();
+                        </script>
+                    </div>
+                    <div id="map01">
+                        <table>
+                            <tr>
+                                <th>주소</th><td>강원도 정선군 약수길 1330</td>
+                                <th>이용안내</th><td>033-560-3413</td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                    <h2 id="subtitle">사정사미(四井四味)</h2>
+                    <div id="subject">
+                        <p>
+                            화암약수에는 쌍약수에 2곳 본약수에 2곳, 총4곳의 샘이 있으며 각각의 샘마다 맛이 다릅니다. <br>
+                            주차장에 주차하고 쌍약수의 맛을 음미하고, 산책로를 통해 본약수로 가보세요. <br>
+                        </p>
+                        <img src="/IMG/infomation/img02.jpg" alt="">
+                    </div>
+                    <h2 id="subtitle">시설이미지</h2>
+                    <div id="subject2">
+                        <img src="/IMG/infomation/img03.jpg" alt="">
+                    </div>
+                    <div class="under_bar"></div>
+
+                    <h2 id="subtitle">편의시설안내</h2>
+                    <p>
+                        <h3>먹거리</h3>
+                        <table class="table">
+                            <tr><th>위치</th><th>상호</th><th>전화번호</th><th>주메뉴</th></tr>
+                            <tr><td>화암약수</td><td>약수골생오리</td><td>033-562-5252</td><td>한방오리백숙, 곤드레 돌솥밥, 더덕구이</td></tr>
+                        </table>
+
+                        <h3>기념품 상가</h3>
+                        <table class="table">
+                            <tr><th>상호</th><th>전화번호</th><th>취급품목</th></tr>
+                            <tr><td>농·특산물 판매점</td><td>563-2845</td><td>농특산물, 토산품</td></tr>
+                            <tr><td>약수 팔각정 토산품</td><td>562-3752</td><td>토산품</td></tr>
+                        </table>
+
+                        <h3>숙박시설</h3>
+                        <table class="table">
+                            <tr><th>위치</th><th>상호</th><th>전화번호</th><th>객실수</th><th>수용인원(명)</th><th>숙박형태</th></tr>
+                            <tr><td>화암약수</td><td>화암장콘도펜션</td><td>562-2374</td><td>9</td><td>72</td><td>콘도형</td></tr>
+                        </table>
+                    </p>
+
+                </article>
+            </section>
+        </div>
+    
+    </div>
+    <footer>
+        
+    </footer>
+</body>
+</html>
